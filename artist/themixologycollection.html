@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Sterling's NFTs Showcase</title>
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+      <!-- Slick -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+
+      <div class="text-slider-wrapper">
+            <div class="text-slider">
+                  <div class="text-slide"><h1>Banana<br>Quack Quack. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809153056960151553">View</a></h1></div>
+                  <div class="text-slide"><h1>The African <br> Warrior. <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809151957448523777">View</a></h1></div>
+                  <div class="text-slide"><h1>The Forest <br> Woman. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809150857936896001">View</a></h1></div>
+                  <div class="text-slide"><h1>Afrocrypt. <a target="_blank" href="#">View</a></h1></div>
+                  <div class="text-slide"><h1>The Beautiful <br> Owl. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809154156471779329">View</a></h1></div>
+                  <div class="text-slide"><h1>The Upside Down <br> Boat. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809159654029918209">View</a></h1></div>
+                  <div class="text-slide"><h1>The librarian <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809158554518290433">View</a></h1></div>
+                  <div class="text-slide"><h1>The doomed <br> Thinker. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809156355495034881">View</a></h1></div>
+                  <div class="text-slide"><h1>The Mountain's <br> Slumber. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809157455006662657">View</a></h1></div>
+                  <div class="text-slide"><h1>The Castle. <a target="_blank" href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/22260434170732248173318603424685255002523476416019269547246809155255983407105">View</a></h1></div>
+            </div>
+      </div>
+
+      <div class="slider-control">
+            <div class="prev"><button type="button"><ion-icon name="arrow-back"></ion-icon></button></div>
+            <div class="next"><button type="button"><ion-icon name="arrow-forward"></ion-icon></button></div>
+      </div>
+
+      <div class="blocks">
+            <div class="block-1"></div>
+            <div class="block-2"></div>
+            <div class="block-3"></div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <div class="image-slider">
+            <div class="image-slide" id="one" style="background: url(slider-image-1.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="two" style="background: url(slider-image-2.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="three" style="background: url(slider-image-3.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="four" style="background: url(slider-image-4.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-5.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-6.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-7.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-8.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-9.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" style="background: url(slider-image-10.png) no-repeat 50% 50%; background-size: cover;"></div>
+      </div>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="slick.js"></script>
+<script>
+
+var sickPrimary = {
+      autoplay: true,
+      autoplaySpeed: 2400,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      speed: 1800,
+      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+      asNavFor: '.text-slider',
+      centerMode: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next')
+}
+
+var sickSecondary = {
+      autoplay: true,
+      autoplaySpeed: 2400,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1800,
+      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+      asNavFor: '.image-slider',
+      prevArrow: $('.prev'),
+      nextArrow: $('.next')
+}
+
+$('.image-slider').slick(sickPrimary);
+$('.text-slider').slick(sickSecondary);
+
+</script>
+</body>
+</html>
